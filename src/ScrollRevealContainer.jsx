@@ -22,6 +22,10 @@ const ScrollRevealContainer = ({ children, move }) => {
       });
   }, [sectionRef]);
 
-  return <section ref={sectionRef}>{children}</section>;
+  return (
+    <section ref={sectionRef} style={{ height: '90vh' }}>
+      {children}
+    </section>
+  );
 };
 export default ScrollRevealContainer;
